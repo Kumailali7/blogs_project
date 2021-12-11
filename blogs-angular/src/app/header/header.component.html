@@ -1,0 +1,23 @@
+<header class="blogs-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark container">
+        <div><fa-icon [icon]="faBook"></fa-icon><a href="https://www.google.com" class="navbar-brand">Blog.com</a></div>
+        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" [attr.aria-expanded]="isCollapsed" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse] = "isCollapsed">
+            <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><a routerLink="/home/blog" class="nav-link">Home</a></li>
+                <li><a routerLink="/aboutus" class="nav-link">About us</a></li>
+                <li><a routerLink="/contactus" class="nav-link">Contact us</a></li>
+                <li><a *ngIf="!hardCodedAuthenticationService.isUserLoggedIn()" routerLink="/blogs" class="nav-link">Blogs</a></li>
+                <li><a *ngIf="hardCodedAuthenticationService.isUserLoggedIn()" routerLink="/blogger/blogs" class="nav-link">Blogs</a></li>
+            </ul>
+
+            <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><a *ngIf="!hardCodedAuthenticationService.isUserLoggedIn()" routerLink="/signup" class="nav-link">Signup</a></li>
+                <li><a *ngIf="!hardCodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+                <li><a *ngIf="hardCodedAuthenticationService.isUserLoggedIn()" (click)="logout()" class="nav-link">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

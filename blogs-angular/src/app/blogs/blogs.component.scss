@@ -1,0 +1,53 @@
+.blogs-blogs {
+  background: #0c0e0f;
+  .card-body .btn {
+    margin-top: 10px;
+    border: 2px solid #000f3b;
+    border-radius: 10px;
+    background-color: #0c0e0f;
+    color: #fff;
+  }
+  .card-body .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .card {
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .card-title {
+    margin-top: 5px;
+  }
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    text-align: center;
+  }
+  .truncate {
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+  }
+  .content {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (min-width: 1280px) {
+    .card-img-top {
+      height: 200px;
+      width: 100%;
+    }
+  }
+}

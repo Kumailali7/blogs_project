@@ -1,0 +1,56 @@
+<div class="blogs-contactus">
+    <div class="card container">
+      <div class="card-header">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="card-body">
+        <form
+          (ngSubmit)="!contactusForm.invalid && contactus()"
+          #contactusForm="ngForm"
+        >
+          <fieldset class="form-group">
+            <label for="name">Name</label>
+            <input
+              class="form-control"
+              [(ngModel)]="name"
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter Your Name"
+            />
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              [(ngModel)]="email"
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter Email"
+            />
+          </fieldset>
+  
+          <fieldset class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              rows="10"
+              cols="50"
+              class="form-control"
+              [(ngModel)]="message"
+              type="text"
+              name="message"
+              id="message"
+              required
+              placeholder="Enter Message"
+            ></textarea>
+          </fieldset>
+  
+          <button type="submit" class="btn btn-lg">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

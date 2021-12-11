@@ -1,0 +1,20 @@
+<div class="blogs-home">
+    <div class="card">
+      <div class="card-header">
+        <h1 *ngIf="user == ''">Welcome Reader</h1>
+        <h1 *ngIf="user != ''">{{ user }}</h1>
+      </div>
+      <div class="card-body">
+        <h3>Read and Publish your passions, your way.</h3>
+        <h5>Create a unique and beautiful blog. It’s easy and free.</h5>
+        <button
+          (click)="createBlog()"
+          *ngIf="user != ''"
+          class="btn btn-lg blog-btn col-sm-4"
+        >
+          Add Blog
+        </button>
+      </div>
+    </div>
+  </div>
+  

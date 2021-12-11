@@ -1,0 +1,53 @@
+<div class="blogger-blogs">
+    <div class="jumbotron">
+      <h1>My Blogs</h1>
+      <button
+        (click)="createBlog()"
+        class="btn blog-btn-add-blog btn-lg col-sm-3"
+      >
+        Add Blog
+      </button>
+    </div>
+    <div class="container">
+      <div class="alert alert-success" *ngIf="message">{{ message }}</div>
+      <div class="blogs-row row">
+        <div class="col-sm-3" *ngFor="let blog of blogs">
+          <div class="card">
+            <div class="card-body">
+              <img
+                class="card-img-top"
+                src="{{ blog.imageUrl }}"
+                alt="Blog Image"
+              />
+              <h3 class="card-title truncate">{{ blog.title }}</h3>
+              <h6>By: {{ blog.username }}</h6>
+              <div class="content">
+                <span class="truncate">{{ blog.description }}</span>
+              </div>
+              <div class="row">
+                <button
+                  (click)="updateBlog(blog.id, blog)"
+                  class="btn blog-btn-update col-sm-4"
+                >
+                  Update
+                </button>
+                <button
+                  (click)="viewBlog(blog.id)"
+                  class="btn blog-btn-view col-sm-4"
+                >
+                  View
+                </button>
+                <button
+                  (click)="deleteBlog(blog.id)"
+                  class="btn blog-btn-delete col-sm-4"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

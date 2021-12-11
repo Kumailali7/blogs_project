@@ -1,0 +1,63 @@
+.blogs-login {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Numans", sans-serif;
+  .container {
+    height: 100%;
+    align-content: center;
+  }
+  .form-group {
+    margin-top: 20px;
+  }
+  .card {
+    height: 450px;
+    width: 400px;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .card-header h3 {
+    color: white;
+    text-align: center;
+  }
+  .input-group-text {
+    width: 50px;
+    background-color: #ffc312;
+    color: black;
+    border: 0 !important;
+  }
+  input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+  }
+  .remember {
+    color: white;
+    margin-top: 20px;
+  }
+  .remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  .login-btn {
+    color: #000;
+    margin-top: 20px;
+    width: 100%;
+    float: right;
+    border-radius: 10px;
+    background-color: #ffc312;
+  }
+  .login-btn:hover {
+    color: #fff;
+    background-color: #0c0e0f;
+    border: 2px solid #000f3b;
+  }
+  .links {
+    color: #fff;
+  }
+  .links a {
+    margin-left: 4px;
+  }
+}

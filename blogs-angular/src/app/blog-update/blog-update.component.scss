@@ -1,0 +1,36 @@
+.blogs-update {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  height: 100vh;
+
+  input {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+  }
+  textarea {
+    resize: none;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+  }
+  label {
+    color: #fff;
+    margin: 10px 0 10px 0;
+  }
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin: 10px 10px 0 0;
+  }
+  .btn {
+    margin-top: 20px;
+    width: 25%;
+    float: right;
+    border: 2px solid #000f3b;
+    border-radius: 10px;
+    background-color: #0c0e0f;
+    color: #fff;
+  }
+  .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}

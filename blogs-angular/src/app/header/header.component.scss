@@ -1,0 +1,26 @@
+.blogs-header {
+    .nav-link {
+        color: #fff;
+        padding: 20px;
+    }
+    .nav-link:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+    fa-icon {
+        color: #fff;
+        margin-right: 10px;
+    }
+    
+    @media (min-width: 1280px) {
+        .navbar {
+            background: transparent !important;
+        }
+    }
+    
+    @media (max-width: 1280px) {
+        .navbar {
+            background: #000 !important;
+        }
+    }
+}

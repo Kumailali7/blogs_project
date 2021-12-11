@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /* #1c1e26 */
+    /* #0c0e0f */
+    /* background-color: #1c1e26; */
+}

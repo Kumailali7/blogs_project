@@ -1,0 +1,24 @@
+<div class="blogs-update">
+    <h1 *ngIf="blog.id!=-1">Update Blog</h1>
+    <h1 *ngIf="blog.id==-1">Create Blog</h1>
+    <div class="alert alert-warning" *ngIf="blogForm.dirty && blogForm.invalid">Fields must not be empty</div>
+    <div class="container">
+    <form (ngSubmit)="!blogForm.invalid && saveBlog()" #blogForm="ngForm">
+        <fieldset class="form-group">
+            <label for="title">Title</label>
+            <input class="form-control" [(ngModel)]="blog.title" type="text" name="title" id="title" required placeholder="Enter Blog Title">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="imageUrl">ImageUrl</label>
+            <input class="form-control" [(ngModel)]="blog.imageUrl" type="text" name="imageUrl" id="imageUrl" required  placeholder="Enter Image URL">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="description">Description</label>
+            <textarea  rows="10" cols="50" class="form-control" [(ngModel)]="blog.description" type="text" name="description" id="description" required  placeholder="Enter Description"></textarea>
+        </fieldset>
+
+        <button type="submit" class="btn btn-lg">Save</button>
+    </form>
+</div>

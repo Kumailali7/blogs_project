@@ -1,0 +1,20 @@
+.blogs-blog {
+  h2 {
+    text-align: center;
+  }
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* background-color: #000; */
+  }
+  .image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+  }
+}
